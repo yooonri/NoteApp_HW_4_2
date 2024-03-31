@@ -2,25 +2,37 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp"
     tools:context=".ui.fragments.note.NoteFragment">
 
+    <EditText
+        android:id="@+id/ed_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Введите текст" />
+
     <TextView
-        android:id="@+id/on_txt"
+        android:id="@+id/save_txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|center"
-        android:layout_marginBottom="250dp"
-        android:textStyle="italic" />
-
-    <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/animationView"
         android:layout_gravity="top|center"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:layout_marginTop="75dp"
-        app:lottie_rawRes="@raw/animation_1"/>
+        android:layout_marginTop="100dp"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/save_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+        android:text="Save" />
+
+
 
 
 
